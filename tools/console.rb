@@ -10,6 +10,9 @@ end
 wework = Startup.new("WeWork", "Adam N.", "www.wework.com")
 flatiron = Startup.new("Flatiron", "Adam & Avi", "www.flatironschool.com")
 
+softbank = VentureCapitalist.new("Soft Bank", 2000000000)
+samsung = VentureCapitalist.new("Samsung", 1500000000)
+mark_cuban = VentureCapitalist.new("Mark Cuban", 900000000)
 
 
 binding.pry
