@@ -7,5 +7,10 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+wework = Startup.new("WeWork", "Adam N.", "www.wework.com")
+flatiron = Startup.new("Flatiron", "Adam & Avi", "www.flatironschool.com")
+
+
+
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
