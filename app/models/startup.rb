@@ -1,3 +1,5 @@
+# Money Unit: In millions. (Ex: $1,000,000,000 =>>> $1,000)
+
 class Startup
     attr_reader :founder, :domain
     attr_accessor :company_name 

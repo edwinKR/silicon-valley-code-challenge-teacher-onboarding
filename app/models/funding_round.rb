@@ -1,3 +1,5 @@
+# Money Unit: In millions. (Ex: $1,000,000,000 =>>> $1,000)
+
 class FundingRound
     attr_reader :startup, :vc
     attr_accessor :funding_round_type, :investment
@@ -21,4 +23,5 @@ class FundingRound
     def self.all
         @@all
     end
+
 end
