@@ -15,7 +15,7 @@ flatiron = Startup.new("Flatiron", "Adam & Avi", "www.flatironschool.com")
 wegrow = Startup.new("WeGrow", "Rebekah N.", "www.wegrow.com")
 
 # Creating venture capitalists instances
-softbank = VentureCapitalist.new("Soft Bank", 2000)
+softbank = VentureCapitalist.new("Soft Bank", 5000)
 samsung = VentureCapitalist.new("Samsung", 1500)
 mark_cuban = VentureCapitalist.new("Mark Cuban", 900)
 
@@ -50,11 +50,14 @@ wework_total_VCs = wework_VC_list.count  #Should return less than 2
 flatiron_TCClub_investors = flatiron.big_investors  #Should return softbank only.
 
 # Softbank(VC)'s status:
-softbank_first_fudning_wegrow = softbank.offer_contract(wegrow, "Series B", 300.00)
+softbank_first_funding_wegrow = softbank.offer_contract(wegrow, "Series B", 300.00)
 softbank_entire_fundings = softbank.funding_rounds
-softbank_portfolio = softbank.portfolio
-softbank_biggest_funding = softbank.biggest_investment
-softbank_second_funding_wegrow = softbank.offer_contract(wegrow, "Series C", 400.00)
+softbank_portfolio_before = softbank.portfolio
+softbank_biggest_funding_before = softbank.biggest_investment
+
+softbank_second_funding_wegrow = softbank.offer_contract(wegrow, "Series C", 800.00)
+softbank_portfolio_after = softbank.portfolio
+softbank_biggest_funding_after = softbank.biggest_investment
 softbank_total_funding_for_wegrow = softbank.invested("www.wegrow.com")
 
 
